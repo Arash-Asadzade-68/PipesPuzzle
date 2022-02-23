@@ -153,7 +153,7 @@ export function Puzzle () {
 
     const handleCheckClick = useCallback(() => {
         puzzleApi.verify().then((msg:any) => {
-            // enqueueSnackbar(msg);
+            window.alert(msg);
         });
     }, [puzzleApi]);
 
