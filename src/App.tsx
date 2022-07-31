@@ -9,7 +9,8 @@ import { AppContextType , AppContext } from './components/AppContext/AppContext'
 export function App() {
   const ctx = useRef<AppContextType>({
     puzzleApi: new PuzzleClass()
-  })
+  });
+  //needs to initial before browser painting
   useLayoutEffect(() => {
     ctx.current.puzzleApi.init();
     ctx.current.puzzleApi.setLevel(1);

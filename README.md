@@ -27,4 +27,4 @@ for testing
 
 concurrently in the root of project in another terminal run the 
 ### `yarn open`
-then click on TvsList.spec.ts in cypress/integration folder
+
